@@ -32,8 +32,8 @@ jobs:
     - name: Deploy to Server      # 第四步，rsync推送文件
       uses: SamKirkland/FTP-Deploy-Action@2.0.0
       env:
-          FTP_SERVER: ${{ SSH_HOST }}
-          FTP_USERNAME: ${{ SSH_USERNAME }}
-          FTP_PASSWORD: ${{ DEPLOY_KEY }}
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
           LOCAL_DIR: .docs/.vuepress/dist
           REMOTE_DIR: /Dist
