@@ -36,4 +36,4 @@ jobs:
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
           LOCAL_DIR: docs/.vuepress/dist
-          REMOTE_DIR: /Deploy/FoxBlog
+          REMOTE_DIR: /FoxBlog
