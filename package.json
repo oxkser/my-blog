@@ -5,14 +5,17 @@
   "author": "wangjie <wangjie6215@163.com>",
   "license": "MIT",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
+    "docs:dev": "vuepress dev docs --temp .temp",
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
-    "vuepress": "^2.0.0-beta.27"
+    "vuepress": "^1.8.2"
   },
   "dependencies": {
     "vinyl-fs": "^3.0.3",
-    "vinyl-ftp": "^0.6.1"
+    "vinyl-ftp": "^0.6.1",
+    "vuepress-plugin-bubble": "^1.0.2",
+    "vuepress-theme-reco": "^1.6.6",
+    "webpack": "^5.64.2"
   }
 }
