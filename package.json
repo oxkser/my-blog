@@ -12,10 +12,6 @@
     "vuepress": "^1.8.2"
   },
   "dependencies": {
-    "vinyl-fs": "^3.0.3",
-    "vinyl-ftp": "^0.6.1",
-    "vuepress-plugin-bubble": "^1.0.2",
-    "vuepress-theme-reco": "^1.6.6",
-    "webpack": "4.8.1"
+    "vuepress-theme-reco": "^1.6.6"
   }
 }
