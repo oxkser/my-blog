@@ -3,7 +3,7 @@ module.exports = {
   title: '狐狸',
   description: '热爱生活',
   head: [
-    ['link', { rel: 'icon', href: '/images/logo.ico' }],
+    ['link', { rel: 'icon', href: '/images/fox.ico' }],
     [
       'meta',
       {
@@ -15,13 +15,20 @@ module.exports = {
   theme: 'reco',
   themeConfig: {
     type: 'blog',
+    codeTheme: 'funky', 
     logo: '/images/logo.jpg',
+    authorAvatar: '/images/logo.jpg',
+    noFoundPageByTencent: false,
+    /*侧边栏*/
+    subSidebar: 'auto',
+    /*导航栏配置*/
+    nav: [
+      { text: '主页', link: '/', icon: 'reco-home' },
+      { text: '时间线', link: '/timeline/', icon: 'reco-date' },
+      { text: '关于我', link: '/aboutMe', icon: 'reco-account' },
+    ],
     /*博客配置*/
     blogConfig: {
-      // nav: [
-      //   { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
-      //   { text: 'Tags', link: '/tags/', icon: 'reco-tag' }
-      // ],
       category: {
         location: 2, // 在导航栏菜单中所占的位置，默认2
         text: '博客' // 默认文案 “分类”
@@ -41,6 +48,17 @@ module.exports = {
       appId: 'VpFCynKcryD90yJ8Yiyssw09-gzGzoHsz', // your appId
       appKey: 'cCqh7vt6A0JyAUPwm3lCVz9E' // your appKey
     },
+    /*友链配置*/
+    friendLink: [
+      {
+        title: 'github',
+        desc: '这是我的github',
+        email: 'wangjie6215@163.com',
+        logo: "/images/github/github-logo.png",
+        link: 'https://www.github.com/oxkser'
+      },
+      // ...
+    ]
     /*密钥 */
     // keyPage: {
     //   keys: ['e10adc3949ba59abbe56e057f20f883e'], // 1.3.0 版本后需要设置为密文
