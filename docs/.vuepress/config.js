@@ -1,7 +1,7 @@
 module.exports = {
   lang: 'zh-CN',
   title: '狐狸',
-  description: '这是狐狸的博客',
+  description: '热爱生活',
   head: [
     ['link', { rel: 'icon', href: '/images/logo.ico' }],
     [
@@ -16,6 +16,25 @@ module.exports = {
   themeConfig: {
     type: 'blog',
     logo: '/images/logo.jpg',
+    /*博客配置*/
+    blogConfig: {
+      // nav: [
+      //   { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
+      //   { text: 'Tags', link: '/tags/', icon: 'reco-tag' }
+      // ],
+      category: {
+        location: 2, // 在导航栏菜单中所占的位置，默认2
+        text: '博客' // 默认文案 “分类”
+      },
+      tag: {
+        location: 3, // 在导航栏菜单中所占的位置，默认3
+        text: '标签' // 默认文案 “标签”
+      },
+      socialLinks: [
+        // 信息栏展示社交信息
+        { icon: 'reco-github', link: 'https://github.com/oxkser' }
+      ]
+    },
     /*评论配置*/
     valineConfig: {
       showComment: true, //是否展示评论
@@ -28,24 +47,5 @@ module.exports = {
     //   color: '#42b983', // 登录页动画球的颜色
     //   lineColor: '#42b983' // 登录页动画线的颜色
     // },
-    /*博客配置*/
-    // blogConfig: {
-    //   nav: [
-    //     { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
-    //     { text: 'Tags', link: '/tags/', icon: 'reco-tag' }
-    //   ],
-    //   category: {
-    //     location: 2, // 在导航栏菜单中所占的位置，默认2
-    //     text: '分类' // 默认文案 “分类”
-    //   },
-    //   tag: {
-    //     location: 3, // 在导航栏菜单中所占的位置，默认3
-    //     text: '标签' // 默认文案 “标签”
-    //   },
-    //   socialLinks: [
-    //     // 信息栏展示社交信息
-    //     { icon: 'reco-github', link: 'https://github.com/oxkser' }
-    //   ]
-    // }
   }
 }
