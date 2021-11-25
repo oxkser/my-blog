@@ -2,6 +2,7 @@
 title: 关于我
 date: 2021-11-25
 sidebar: false 
+publish: false
 isShowComments: false
 # categories:
 #  - 测试分类
