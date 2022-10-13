@@ -15,6 +15,7 @@ module.exports = {
   theme: 'reco',
   themeConfig: {
     type: 'blog',
+    record: '蜀ICP备2021029946号-1',
     codeTheme: 'funky', 
     logo: '/images/logo.jpg',
     authorAvatar: '/images/logo.jpg',
